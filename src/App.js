@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styled from 'styled-components'
+// import { Router, Switch, Route } from "react-router-dom";
+// import history from "history";
+// import { Paths } from "utils/history";
+import { Helmet } from 'react-helmet'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppContainer>
+      <Helmet>
+        <meta charset='utf-8' />
+        <title>Swapi Project</title>
+      </Helmet>
+    </AppContainer>
+  )
 }
 
-export default App;
+export default App
+
+const AppContainer = styled.div``
